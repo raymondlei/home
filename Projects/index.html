@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
 		<title>Blue Rain</title>
@@ -11,37 +12,68 @@
 	<body>
 		<div id="main">
 			<div id="header">
-				<h1>Peng Lei</h1></div>
+			<h1>Peng Lei's Home Page</h1>
+			</div>
 			<div id="menu">
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li class="selected"><a href="./index.html">Projects</a></li>
-					<li><a href="../Resources/index.html">Resources</a></li>
-					<li><a href="../About/index.html">About</a></li>
+					<li><a href="../index.html">ECE 422</a></li>
+                    <li class="selected"><a href="./index.html">Projects</a></li>
+					<!--
+                        <li><a href="../Resources/index.html">Resources</a></li>
+                     -->
+                    <li><a href="../About/index.html">About me</a></li>
 				</ul>
 			</div>
-			<div id="content">
-				<div style="padding:16px;">
-					Send Messge : <input id="entry" type="textbox"></input>
-					<button class="google button" onclick="UartTxFunction()">Send</button>
-				</div>
-
-				<p>
-					<button class="scaled google button" onclick="ledOnFunction()">LED On</button>
-				</p>
-				<p>	</p>
-				<p>	</p>
-				<p>
-					<button class="scaled google button" onclick="ledOffFunction()">LED Off</button>
-				</p>
-			</div>
-			<div id="footer">
-				<p>
-					Designed by <a href="http://www.pixelcarnage.com/">PixelCarnage</a>.<br />Released under the GNU GPL for free distributation and modification.
-				</p>
-			</div>
-		</div>
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="Application.js"></script>
+            <div id="panel_project">
+                <div id="project">
+                    <h4>iPad Device Monitoring</h4>
+                    <ul>
+                        <li>Project enabled a remote monitoring via the internet of the drill speed and advance rate of a semi‐automated orthopedic surgical drill system.</li>
+                        <li>Primary responsibility was in the firmware development in C on the real‐time operating system (Micrium).  utilized embedded TCP/IP software stack.</li>
+                        <li>Developed PC application in C# to monitor device’s runtime status.</li>
+                    </ul>
+                    <h4>iPhone Temperature Reader with RFID tag</h4>
+                    <ul>
+                        <li>Component research and selection for near field application requirements. Developed proof-of-concept firmware on iPhone accessory</li>
+                        <li>Programmed RFID devices and developed test tools for RFID reader and RFID tag.</li>
+                    </ul>
+                    <h4>Thermo Cycler Production Manufacturing</h4>
+                    <ul>
+                        <li>Developed and refined manufacturing work instructions including software load and test.</li>
+                        <li>Assembly work included chassis, electronics, interconnects, control board, various components and ship packaging.  Responsible for training assembly technicians.</li>
+                        <li>Supported in‐process high‐precision temperature calibration, Hi‐Pot, and functional test.</li>
+                    </ul>
+                    <h4>Home Use Stimulator for Treatment of Macular Degeneration</h4>
+                    <ul>
+                        <li>Developed Windows‐based application that interfaces with portable stimulator.</li>
+                        <li>Application was written entirely in C# and incorporated USB‐HID library and multi‐threaded implementation.  Supported development of software test requirements.</li>
+                    </ul>
+                    <h4>Handheld CO2 Monitor Device</h4>
+                    <ul>
+                        <li>Firmware development on ARM7 platform using open source tool chain.</li>
+                        <li>Developed advanced Microsoft Excel spreadsheet to plot and analysis test data.</li>
+                        <li>Developed Windows‐based application to record test data into CSV‐formatted file in C#.</li>
+                    </ul>
+                    <h4>Hospital Patient Warming System</h4>
+                    <ul>
+                        <li>Fixed implementation flaw in the existing firmware code written in C, which was found in the units returned from the field. Responsible for identify the root cause and implement fixes.</li>
+                        <li>Modified firmware code to add new feature to enhance error detection. Responsible also for verification and validation and update test report.  All code changes were done with minimal impact to memory, since the existing system already used 96% of available ROM and 94% of available RAM.</li>
+                    </ul>
+                    <h4>CPAP (Continuous Positive Airway Pressure) Device</h4>
+                    <ul>
+                        <li>Firmware development on device’s user interface and device’s component driver.</li>
+                        <li>Device is based on TI’s DSP real‐time operation system. Component driver included LCD, user switch, stepper motor, USB mass storage, RS‐232, onboard flash for storage and real‐time clock.</li>
+                        <li>Firmware modules included command line console for system diagnostic and debugging.</li>
+                        <li>Developed Windows‐based application for plotting system test data in real time. Application was written in C# with third-party open‐source graphic library (ZedGraph)</li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div id="footer">
+                <p>
+                    Designed by <a href="http://www.pixelcarnage.com/">PixelCarnage</a>.<br />Released under the GNU GPL for free distributation and modification.
+                </p>
+            </div>
+        </div>
 	</body>
 </html>

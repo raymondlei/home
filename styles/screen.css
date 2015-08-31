@@ -1,4 +1,4 @@
-* {
+﻿* {
 	margin : 0;
 	padding : 0;
 }
@@ -7,6 +7,17 @@ a {
 	color : #437fda;
 	text-decoration : none;
 }
+
+#header {
+	background : #2b548c url('../images/header_bg.png') repeat-x bottom left;
+	padding : 4em 4em 1em 4em;
+}
+#header h1 {
+	color : #ffffff;
+	font : 240% sans-serif;
+    padding-bottom: 1em;
+}
+
 a:visited {
 	color : #437fda;
 	text-decoration : underline;
@@ -15,102 +26,50 @@ a:hover {
 	color : #ba8f43;
 }
 
-h2 {
-	color : #343434;
-	font : italic 200% sans-serif;
-}
-h3 {
-	color : #343434;
-	font : italic 160% sans-serif;
-}
-h4 {
-	color : #343434;
-	font : bold italic 110% sans-serif;
-	padding : 1em 1em 0 1em;
+table, th, td {
+    border-collapse: collapse;
+    padding-right: 30px;
+    padding-bottom: 3px;
 }
 
 html {
 	color : #565656;
-	font : 70%/170% sans-serif;
+	font : 80%/130% sans-serif;
 	text-align : justify;
+    overflow:scroll;
 }
 
-img {
-	margin : 1em 1em 0 1em;
-}
-img.left {
-	float : left;
-	margin : 1em 1em 0 0;
-}
-img.right {
-	float : right;
-	margin : 1em 0 0 1em;
+h2 {
+    color: #404040
 }
 
-blockquote {
-	font-style : italic;
-	margin : 1em 1em 0 1em;
-	padding : 0 0 1em 0;
-}
-blockquote span {
-	font-size : 200%;
-	line-height : 1%;
-	margin : 0 0.15em;
-	position : relative;
-	top : 0.25em;
-}
-
-.scaled.google {
-    transform: scale(2);
-    transform-origin: left bottom 0;
-}
-
-.google.button
-{
-    background-image: -moz-linear-gradient(center top , #FFFFFF, #DDDDDD);
-    border: 1px solid #999999;
-    border-radius: 2px;
-    color: #333333;
-    font-weight: normal;
-    line-height: 1em;
-    margin-right: 1em;
-    padding: 0.4em 0.625em;
-    text-shadow: 0 1px 1px #FFFFFF;
-}
-
-form button {
-	background : #ffffff;
-	border : 1px solid #cfcfcf;
-	padding : 0.25em;
-	margin : 0 0 0 0.75em;
-}
-form input {
-	border : none;
-	width : 100%;
-}
-form textarea {
-	border : none;
-	width : 100%;
-	height : 10em;
-}
-form p.button {
-	text-align : right;
-}
-form p.input,
-form p.text {
-	background : #ffffff;
-	border : 1px solid #cfcfcf;
-	padding : 0.25em;
-	margin : 0.25em 1em 0 1em;
+h3 {
+    color: #2E74B5;
 }
 
 p {
-	padding : 1em 1em 0 1em;
+    line-height: 1.5;
+    margin-top: 0em;
 }
 
-ul,
+ul {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 2em;
+}
+
 ol {
-	padding : 1em 1em 0 3em;
+	padding : 0em 2em 0em 2em;
+}
+
+ol li {
+    list-style-type:decimal;
+    padding: 0 0 1em;
+}
+
+ol li ol li {
+    list-style-type: lower-alpha;
+    padding: 0 0 0em;
 }
 
 #main {
@@ -121,19 +80,10 @@ ol {
 	width : 65em;
 }
 
-#header {
-	background : #2b548c url('../images/header_bg.png') repeat-x bottom left;
-	padding : 6em 4em 1em 4em;
-}
-#header h1 {
-	color : #ffffff;
-	font : italic 200% sans-serif;
-}
-
 #menu {
 	background : #437fda;
 	border-bottom : 1px solid #2b548c;
-	font : 100% sans-serif;
+	font : 120% sans-serif;
 }
 #menu ul {
 	padding : 0.75em 4em;
@@ -159,18 +109,7 @@ ol {
 	color : #ba8f43;
 }
 
-#content {
-	border-bottom : 1px solid #cfcfcf;
-	height : auto !important;
-	height : 1%;
-	overflow : hidden;
-	padding : 2em 0 0 0;
-}
-#content div {
-	padding : 0 4em 2em 4em;
-}
-
-#panel {
+#panel, #panel_about, #panel_project {
 	background : #efefef;
 	border : 1px solid #dfdfdf;
 	border-bottom : 1px solid #cfcfcf;
@@ -180,15 +119,63 @@ ol {
 	overflow : hidden;
 	padding : 0 5em 2em 5em;
 }
+
+#panel p {
+    margin-bottom: 1em;
+}
+
+#panel h2{
+    padding-bottom: 10px;
+}
+
+#panel div.right h3{
+    padding-top: 25px;
+}
+
+#panel li {
+    margin-bottom: 0.5em;
+}
+
+#content1 {
+    padding : 3em 0em 3em 3em;
+}
+
+#content1 h1{
+    padding-bottom: 1.5em;
+}
+
+#content1 p{
+    padding : 1em 0em 0em 0em;
+    color: #7c0303;
+}
+
+#content2 p {
+    margin-bottom: 1em;
+}
+
+#content2 h2{
+    padding-top: 20px;
+}
+#footer {
+	font-size : 85%;
+	margin : auto;
+	padding : 1em 0 3em 0;
+	text-align : center;
+	width : 65%;
+}
+
+
 #panel div {
 	padding : 2em 0 0 0;
 }
+
 div.left {
 	left : -1em;
 	float : left;
 	position : relative;
 	width : 50%;
 }
+
 div.right {
 	left : 1em;
 	float : left;
@@ -196,10 +183,33 @@ div.right {
 	width : 50%;
 }
 
-#footer {
-	font-size : 85%;
-	margin : auto;
-	padding : 1em 0 3em 0;
-	text-align : center;
-	width : 65%;
+#summary h2{
+    padding: 2em 0em 0em 0em;
+}
+#summary h4{
+    padding: 0em 0em 1em 0em;
+
+}
+
+#project h4{
+    padding: 1em 0em 0em 0em;
+}
+#panel_project{
+    margin: 5em 5em 5em 5em;
+}
+
+#panel_project li{
+    padding-bottom: 1em;
+}
+
+#panel_about{
+    margin: 5em 0em 0em 0em;
+}
+
+#panel_about p{
+    padding-bottom: 1.2em;
+}
+
+#contact h4{
+    padding-top: 2em;
 }
